@@ -6,7 +6,6 @@ const websocket = require('./lib/websocket/websocketServer');
 const cors = require('cors');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var gameDataRouter = require('./routes/gameData');
 
 var app = express();
