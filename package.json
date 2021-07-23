@@ -29,6 +29,9 @@
     "appId": "scoreboard",
     "mac": {
       "category": "fgsportfoto.scoreboard"
+    },
+    "win": {
+      "icon": "build/icon.png"
     }
   }
 }

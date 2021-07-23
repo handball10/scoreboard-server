@@ -7,6 +7,7 @@ const cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var gameDataRouter = require('./routes/gameData');
+var fileserverRouter = require('./routes/fileserver');
 
 var app = express();
 
@@ -19,6 +20,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 // app.use(express.static(path.join(__dirname, 'public/scoreboard')));
 
 app.use('/', indexRouter);
+app.use('/file', fileserverRouter);
+
 app.use('/game', gameDataRouter);
 
 module.exports = app;
